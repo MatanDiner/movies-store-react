@@ -1,0 +1,79 @@
+.formDiv{
+    background-color: #590902;
+    width: 300px;
+    display: inline-block;
+    margin-left: 920px;
+    position: relative;
+    top: -305px;
+    border-radius:15px; 
+}
+.elementsDiv{
+    width: 200px;
+    margin: 10px auto;
+}
+.buttonDiv{
+    text-align: center;
+}
+
+.errorLabel{
+    color: red;
+    font-weight: bold;
+}
+
+.cardDiv{
+    display: inline-block;
+}
+
+.vidoeDiv{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+@media(max-width:499px){
+    .formDiv{
+        position: relative;
+        width: 350px;
+        left: 50%;
+        margin-top: 310px;
+        margin-left: -175px;
+    }
+
+    .cardDiv{
+        position: relative;
+        width: 350px;
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .vidoeDiv{
+        margin-left: 32px;
+    }
+}
+
+@media(max-width:375px){
+   
+    .vidoeDiv{
+        margin-left: 12.5px;
+    }
+}
+
+@media(max-width:360px){
+    .formDiv{
+        position: relative;
+        width: 340px;
+        left: 50%;
+        margin-left: -170px;
+    
+    }
+
+    .cardDiv{
+        position: relative;
+        width: 340px;
+        left: 50%;
+        margin-left: -170px;
+    }
+
+    .vidoeDiv{
+        margin-left: 15px;
+    }
+}

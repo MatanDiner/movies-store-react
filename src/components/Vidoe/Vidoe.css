@@ -1,0 +1,25 @@
+.vidoe{
+    width: 400px;
+    height: 400px;
+}
+
+@media(max-width:499px){
+   
+    .vidoe{
+        width: 350px;
+    }
+}
+
+@media(max-width:375px){
+
+    .vidoe{
+        width: 350px;
+    }
+
+}
+
+@media(max-width:360px){
+    .vidoe{
+        width: 330px;
+    }
+}

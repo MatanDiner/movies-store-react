@@ -1,0 +1,131 @@
+.Card{
+    border: 1px solid black;
+    width: 400px;
+    display: inline-block;
+    background-color:#F2836B;
+    color: darkblue;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.Card:hover{
+    box-shadow: 0px 0px 10px red;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+
+}
+.tableDiv{
+    position: relative;
+    width: 300px;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.buyBtn{
+    border-radius: 10px;
+    background-color: #8C0303;
+    color: #F2E4C9;
+    box-sizing: border-box;
+    border: 1px solid #590202;
+    width: 85px;
+    cursor: pointer;
+}
+
+.addBtn{
+    border-radius: 10px;
+    background-color: #8C0303;
+    color: #F2E4C9;
+    border: 1px solid #590202;
+    cursor: pointer;
+}
+
+.addBtn::before{
+content: "Add to cart";
+}
+
+.inCartBtn{
+    animation-duration: 2s;
+    animation-name: example;
+    background-color: #DB2B30;
+    color: #EDF7F5;
+    cursor: auto;
+}
+@keyframes example {
+   to{transform: rotateY(360deg);}
+   to{transition: transform 0.8s;}
+   to{background-color: #DB2B30;}
+   to{color: #EDF7F5;}
+  }
+.inCartBtn::before{
+    content: "In the cart";
+}
+
+.removeBtn{
+    background-color: #DB2B30;
+    color: #EDF7F5;
+    border-radius: 10px;
+    border: 1px solid #DB2B30;
+    cursor: pointer;
+}
+
+.buyBtn:hover,
+.addBtn:hover,
+.removeBtn:hover{
+    background-color: red;
+}
+
+.inCartBtn:hover{
+    background-color: #DB2B30;
+}
+
+.PersonalDetails_hide{
+    display: none;
+}
+.PersonalDetails_show{
+    display: block;
+    width: 300px;
+    background-color: #E84A5F;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.PersonalDetails_Div{
+    width: 300px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+}
+
+
+.PersonalDetails_title{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media(max-width:499px){
+
+    .Card{
+        width: 340px;
+        position: relative;
+        left: 50%;
+        margin-left: -170px;
+        display: block;
+    }
+}
+
+@media(max-width:360px){
+
+    .Card{
+        width: 320px;
+        margin-left: -160px;
+    }
+}
